@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Página | Filtrar Produtos</title>
+</head>
+
+<body>
+    <header class="flex justify-between items-center px-16 py-15 bg-sky-600">
+        <div class="font-bold">
+            <h1>Lojinha das Koisas</h1>
+        </div>
+        <div class="relative">
+            <a href="">
+                <box-icon name='search-alt' class="absolute right-3 top-2.5 hover:fill-sky-600"></box-icon>
+            </a>
+            <input type="text" name="" id="" class="w-120 h-10 rounded bg-white pl-4">
+
+        </div>
+        <div>
+            <!-- Seção de categorias -->
+            <select name="categorias" id="categorias" class="h-10 bg-white px-4 rounded">
+                <option value="roupasMasculinas">men's clothing</option>
+                <option value="roupasFemininas">women's clothing</option>
+                <option value="eletronicos">electronics</option>
+                <option value="joias">jewelery</option>
+            </select>
+
+            <!-- Seção de ordenação -->
+            <select name="ordenacao" id="ordenacao" class="h-10 bg-white px-4 rounded">
+                <option value="preco">Ordenção por preços</option>
+                <option value="nota">Ordenação por Avaliação</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="p-15 bg-slate-200">
+        <div id="cards" class="grid grid-cols-4 gap-4 ">
+            <div class="bg-white rounded p-4">
+                <div class="relative">
+                    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="mochila">
+                    <div class="p-1 bg-sky-600 text-white font-bold -top-0.5 absolute right-3 rounded">5.0 <box-icon class="relative top-0.5 fill-yellow-400" name='star' type='solid' ></box-icon></div>
+                </div>
+                <div class="pt-4">
+                    <h2 class="font-semibold text-2xl">Nome do produto</h2>
+                    <h6 class="font-bold">categoria</h6>
+                    <h6 class="text-right text-2xl">R$ 0.00</h6>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
